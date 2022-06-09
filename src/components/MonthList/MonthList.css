@@ -1,23 +1,30 @@
-.App {
+.MonthList {
     text-align: center;
 }
 
-.App-header {
+.MonthList-header {
     background-color: #222;
     min-height: 120px;
     padding: 20px;
     color: white;
 }
 
-.App-title {
+.MonthList-title {
     font-size: 1.5em;
 }
 
-.App-intro {
+.MonthList-intro {
     font-size: large;
 }
 
-@keyframes App-logo-spin {
+@keyframes MonthList-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
 }
