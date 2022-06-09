@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css';
-import Header from '../Header/Header';
-import MonthList from '../MonthList/MonthList';
+import './Header.css';
 
-function App() {
+function Header() {
     const [months, setMonths] = useState([]);
     
     useEffect(() => {
@@ -21,11 +19,14 @@ function App() {
     }
 
     return (
-        <div className="App">
-        <Header/>
-            <MonthList months={months} getMonths={getMonths}/>
+        <div className="Header">
+            <header className="App-header">
+                <h1 className="App-title">Select a Month</h1>
+                <h3>SELECTED MONTH GOES HERE</h3>
+                <br/>
+            </header>
         </div>
     );
 }
 
-export default App;
+export default Header;
