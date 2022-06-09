@@ -32,6 +32,6 @@ button {
     background-color: lightskyblue;
     border: solid black 1px;
     border-radius: 5px;
-    min-width: 300px;
+    min-width: 200px;
     min-height: 75px;
 }
