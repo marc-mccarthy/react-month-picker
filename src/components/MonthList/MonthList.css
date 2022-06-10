@@ -1,29 +1,6 @@
-.MonthList {
-    text-align: center;
-}
-
-.MonthList-header {
-    background-color: #222;
-    min-height: 120px;
-    padding: 20px;
-    color: white;
-}
-
-.MonthList-title {
-    font-size: 1.5em;
-}
-
-.MonthList-intro {
-    font-size: large;
-}
-
-@keyframes MonthList-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
 ul {
-    padding: 0px;
+    text-align: center;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
     gap: 5px;

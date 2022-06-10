@@ -25,5 +25,4 @@ function MonthItem(props) {
     );
 }
 
-
 export default MonthItem;

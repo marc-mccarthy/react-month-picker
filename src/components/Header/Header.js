@@ -8,7 +8,7 @@ function Header() {
     return (
         <div style={{backgroundColor: changeMonthColor}} className="Header">
             <header className="Header-header">
-                <h1 className="Header-title">Select a Month</h1>
+                <h1 className="Header-title">Select a Month:</h1>
                 <h3><b>{thisMonthReducer}</b></h3>
                 <br/>
             </header>
