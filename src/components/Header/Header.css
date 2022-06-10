@@ -1,0 +1,22 @@
+.Header {
+    text-align: center;
+}
+
+.Header-header {
+    min-height: 50px;
+    padding: 10px;
+    color: white;
+}
+
+.Header-title {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+@keyframes Header-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
