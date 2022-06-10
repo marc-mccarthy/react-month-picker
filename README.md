@@ -10,7 +10,7 @@ A basic month picker where clicking on each month places that month in the heade
 
 ## Languages
 
-JavaScript, CSS, HTML, Postgresql, and Markdown demonstrated.
+JavaScript, CSS, HTML, and Markdown demonstrated.
 
 ## Packages
 
