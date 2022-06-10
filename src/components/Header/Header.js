@@ -1,28 +1,15 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import {useSelector} from 'react-redux';
 import './Header.css';
 
 function Header() {
-    const [months, setMonths] = useState([]);
-    
-    useEffect(() => {
-        getMonths();
-    }, []);
-
-    const getMonths = () => {
-        axios.get('/calendar').then(response => {
-            console.log(`GET Response: ${JSON.stringify(response.data)}`);
-            setMonths(response.data);
-        }).catch(error => {
-            console.log(`GET Error: ${error}`);
-        })
-    }
+    const thisMonthReducer = useSelector(store => store.thisMonthReducer);
+    const changeMonthColor = useSelector(store => store.changeMonthColor);
 
     return (
-        <div className="Header">
-            <header className="App-header">
-                <h1 className="App-title">Select a Month</h1>
-                <h3>SELECTED MONTH GOES HERE</h3>
+        <div style={{backgroundColor: changeMonthColor}} className="Header">
+            <header className="Header-header">
+                <h1 className="Header-title">Select a Month</h1>
+                <h3><b>{thisMonthReducer}</b></h3>
                 <br/>
             </header>
         </div>

@@ -3,9 +3,8 @@
 }
 
 .Header-header {
-    background-color: #222;
-    min-height: 120px;
-    padding: 20px;
+    min-height: 50px;
+    padding: 10px;
     color: white;
 }
 
@@ -13,8 +12,8 @@
     font-size: 1.5em;
 }
 
-.Header-intro {
-    font-size: large;
+h3 {
+    font-size: 2.5em;
 }
 
 @keyframes Header-logo-spin {
